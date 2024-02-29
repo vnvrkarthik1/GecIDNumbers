@@ -50,21 +50,35 @@
         .vnvr{
           position: relative;
         }
-        .vnvr::before{
+         .vnvr::before{
           content:"Developed by";
           position: absolute;
           left: -70px;
           top: -2px;
           font-size:.75rem;
+          background: linear-gradient(135deg,#bed8cf,#00ffff);
+        background-clip: text;
+        color: transparent;
           
         }
         .vnvr::after{
-          content:"Karthik";
+          content:"ᏦᐃᎡTᎻᏆᏦ";
           position: absolute;
-          right: -37px;
+          right: -63px;
           bottom: -2px;
           font-size:.75rem;
+          background: linear-gradient(135deg,#0859c6,#bed8cf);
+        background-clip: text;
+        color: transparent;
           
+        }
+        .vnvr{
+          background: linear-gradient(135deg,#00ffff,#0859c6);
+          
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+     
         }
     </style>
 </head>
@@ -72,20 +86,20 @@
     <section>
       
    <div class=" d-block mx-auto text-center my-2">
-      <h1 class="text-center display-1 vnvr" style="display:inline-block"> VNVR</h1>
+      <h1 class="text-center display-1 vnvr" style="display:inline-block">ᐁΝᐁᎡ </h1>
       </div>
       
       <section >
         
-      
+        <form onsubmit="getid()">
      <div class="input-group mb-3 
      mx-auto" style="width: 90%">
   <span class="input-group-text" id="basic-addon1" >Enter ID: </span>
-  <input type="text" class="form-control" placeholder="Ex: 23481a04p4" aria-label="Username"  aria-describedby="basic-addon1" id="inp" autofocus>
+  <input type="text" class="form-control" placeholder="Ex: 23481a04p4" aria-label="Username"  aria-describedby="basic-addon1" id="inp" autofocus required="true">
   
-  <button type="button" id="sub" onclick="getid()" class="btn text-white" style="background:#ed6f00;"> Get Photo</button>
+  <button type="submit" id="sub" onclick="getid()" class="btn text-white" style="background:#ed6f00;"> RoLEx</button>
 </div>
-
+        </form>
 
  
 
@@ -102,7 +116,7 @@
 
 
 <div class="alert alert-info w-100 mx-auto d-block" role="alert" style=" position:absolute; bottom:0;left:calc(50%- ) ">
- You Can check any <mark background>ID number</mark> photo of <mark>Any Year</mark>
+ You Can check any <mark background>ID numer</mark> photo of <mark>Any Year</mark>
 </div>
 
 
