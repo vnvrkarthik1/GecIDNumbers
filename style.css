@@ -1,11 +1,11 @@
 
     :root{
-      --section-background-dark: rgba(17, 25, 40, 0.75);
+      --section-background-dark: rgba(17,25,40,0.288);
       --div-header : #7c77774f;
       --img-border : white;
       --span-color:white;
       --branches-bg-dark : #7c777795;
-      --sec2-box-shadow: rgba(135,96,40,0.33) 0px 50px 100px -20px, #ffa209 0px 30px 60px -30px, rgba(172,128,34,0.718) 0px -2px 6px 0px inset;
+      --sec2-box-shadow: rgba(40,121,135,0.33) 0px 50px 100px -20px, #53c9ebb1 0px 30px 60px -30px, rgba(34,135,172,0.718) 0px -2px 6px 0px inset;
     }
     
     
@@ -36,6 +36,7 @@
         font-weight: bolder;
         font-size: 2rem;
         letter-spacing: -50px;
+       
       }
       
         
@@ -70,9 +71,9 @@
           
        
           
-          
+          background: var(--section-background-dark);
     box-shadow: var(--sec2-box-shadow);
-    backdrop-filter:blur(6px) saturate(150%);
+    backdrop-filter:blur(16px) saturate(300%);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125)
           
@@ -110,6 +111,7 @@
  .hidden{
             opacity: 0;
         scale:0.5;
+        
             transform: translateY(100px);
 
             transition: all 500ms; 
@@ -123,6 +125,7 @@
         .show{
             opacity: 1;
          scale:1;
+        
             transform: translateY(0);
 
         }
@@ -143,15 +146,9 @@
         
             
          }
+         
          button {
-  position: relative;
-  padding: 13px 35px;
-  background: #f5ddb7;
-  font-size: 17px;
-  font-weight: 900;
-  color: #181818;
-  border: none;
-  border-radius: 8px;
+ 
   box-shadow: 2px 2px 5px #18181869, inset 2px 2px 10px #ffffffb0;
   transition: all .3s ease-in-out;
 }
