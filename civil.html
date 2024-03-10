@@ -28,8 +28,16 @@
     
  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
  <style>
+    :root{
+      --section-background-dark: rgba(17,25,40,0.546);
+      --div-header : #7c77774f;
+      --img-border : white;
+      --span-color:white;
+      --branches-bg-dark : #7c777795;
+      --sec2-box-shadow: rgba(40,121,135,0.33) 0px 50px 100px -20px, #53c9ebb1 0px 30px 60px -30px, rgba(34,135,172,0.718) 0px -2px 6px 0px inset;
+    }
    body{
-      background: url(IMG_20240308_234507.jpg);
+      background: url(darkgreennature.jpg);
     
       background-size:cover;
       background-attachment: fixed;
@@ -63,7 +71,7 @@
                   <a href="./eee.html">
         <button type="button" class="btn btn-outline-primary col-3 ">EEE <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M21.2 42q-.55 0-.85-.35-.3-.35-.2-.9L22 27.9h-7.3q-.55 0-.8-.5t0-.95l11.85-19.8q.15-.25.5-.45t.7-.2q.55 0 .85.35.3.35.2.9l-1.85 12.8h7.2q.55 0 .825.5.275.5.025.95L22.4 41.35q-.15.25-.5.45t-.7.2Z"/></svg></button></a>
                   <a href="./civil.html">
-        <button type="button" class="btn btn-outline-success col-3">CIVIL <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.0rem"><path fill="currentColor" d="M34.85 16.85h3v-3h-3Zm0 8.55h3v-3h-3Zm0 8.5h3v-3h-3Zm-2.8 8.1v-3H43V9H23.25v5.6l-3-2.1V9q0-1.25.875-2.125T23.25 6H43q1.25 0 2.125.875T46 9v30q0 1.25-.875 2.125T43 42Zm0-19.35ZM2 40.5V24.05q0-.7.325-1.375T3.25 21.6l10.55-7.55q.8-.55 1.75-.55t1.75.55l10.5 7.55q.6.4.925 1.075.325.675.325 1.375V40.5q0 .65-.425 1.075Q28.2 42 27.55 42H18.2V31.95h-5.3V42H3.5q-.65 0-1.075-.425Q2 41.15 2 40.5ZM5 39h4.9V28.95h11.3V39h4.85V24.05l-10.5-7.55L5 24.05Zm16.2 0V28.95H9.9V39 28.95h11.3Z"/></svg></button></a>
+        <button type="button" class="btn btn-success col-5 fw-bolder">CIVIL <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.0rem"><path fill="currentColor" d="M34.85 16.85h3v-3h-3Zm0 8.55h3v-3h-3Zm0 8.5h3v-3h-3Zm-2.8 8.1v-3H43V9H23.25v5.6l-3-2.1V9q0-1.25.875-2.125T23.25 6H43q1.25 0 2.125.875T46 9v30q0 1.25-.875 2.125T43 42Zm0-19.35ZM2 40.5V24.05q0-.7.325-1.375T3.25 21.6l10.55-7.55q.8-.55 1.75-.55t1.75.55l10.5 7.55q.6.4.925 1.075.325.675.325 1.375V40.5q0 .65-.425 1.075Q28.2 42 27.55 42H18.2V31.95h-5.3V42H3.5q-.65 0-1.075-.425Q2 41.15 2 40.5ZM5 39h4.9V28.95h11.3V39h4.85V24.05l-10.5-7.55L5 24.05Zm16.2 0V28.95H9.9V39 28.95h11.3Z"/></svg></button></a>
                    <a href="./mech.html">
         <button type="button" class="btn btn-outline-danger col-3">MECH<svg  viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="0.7em"><path fill="currentColor" d="M37.65 16.8q-.2 0-.4-.1t-.3-.35l-1.5-3.25-3.25-1.5q-.25-.1-.35-.3-.1-.2-.1-.4t.1-.4q.1-.2.35-.3l3.25-1.5 1.5-3.25q.1-.25.3-.35.2-.1.4-.1t.4.1q.2.1.3.35l1.5 3.25 3.25 1.5q.25.1.35.3.1.2.1.4t-.1.4q-.1.2-.35.3l-3.25 1.5-1.5 3.25q-.1.25-.3.35-.2.1-.4.1Zm4.2 14.45q-.2 0-.4-.1t-.3-.3l-.8-1.75-1.75-.8q-.1-.05-.4-.7 0-.2.1-.4t.3-.3l1.75-.8.8-1.75q.05-.1.7-.4.2 0 .4.1t.3.3l.8 1.75 1.75.8q.1.05.4.7 0 .2-.1.4t-.3.3l-1.75.8-.8 1.75q-.05.1-.7.4ZM17.05 44q-.55 0-.975-.4-.425-.4-.525-.95l-.35-3.25q-.7-.1-1.45-.45t-1.3-.85l-2.7 1.15q-.55.25-1.05.05t-.8-.65l-3-4.85q-.3-.55-.175-1.125t.625-.925l2.6-1.7q-.25-.85-.25-1.5t.25-1.5l-2.6-1.7q-.5-.35-.625-.925Q4.6 23.85 4.9 23.3l3-4.85q.3-.45.8-.65t1.05.05l2.7 1.15q.55-.5 1.3-.85t1.45-.45l.35-3.25q.1-.55.525-.95.425-.4.975-.4h5.7q.55 0 .975.4.425.4.525.95l.35 3.25q.7.1 1.45.45t1.3.85l2.7-1.15q.55-.25 1.05-.05t.8.65l3 4.85q.3.55.175 1.125t-.625.925l-2.6 1.7q.25.85.25 1.5t-.25 1.5l2.6 1.7q.5.35.625.925.125.575-.175 1.125l-3 4.85q-.3.45-.8.65t-1.05-.05l-2.7-1.15q-.55.5-1.3.85t-1.45.45l-.35 3.25q-.1.55-.525.95-.425.4-.975.4Zm2.85-9.7q2.5 0 4.125-1.625t1.625-4.125q0-2.5-1.625-4.125T19.9 22.8q-2.5 0-4.125 1.625T14.15 28.55q0 2.5 1.625 4.125T19.9 34.3Zm0-5.75Z"/></svg></button></a>
                   <a href="./iot.html">
@@ -73,7 +81,7 @@
                   <a href="./aiml.html">
         <button type="button" class="btn btn-outline-info col-3" >AI&ML<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="0.6em"><path fill="currentColor" d="M11.5 40q-1.45 0-2.475-1.025Q8 37.95 8 36.5v-15q0-1.45 1.025-2.475Q10.05 18 11.5 18q1.45 0 2.475 1.025Q15 20.05 15 21.5v15q0 1.45-1.025 2.475Q12.95 40 11.5 40ZM24 40q-1.45 0-2.475-1.025Q20.5 37.95 20.5 36.5v-25q0-1.45 1.025-2.475Q22.55 8 24 8q1.45 0 2.475 1.025Q27.5 10.05 27.5 11.5v25q0 1.45-1.025 2.475Q25.45 40 24 40Zm12.5 0q-1.45 0-2.475-1.025Q33 37.95 33 36.5v-7q0-1.45 1.025-2.475Q35.05 26 36.5 26q1.45 0 2.475 1.025Q40 28.05 40 29.5v7q0 1.45-1.025 2.475Q37.95 40 36.5 40Z"/></svg></button></a>
          <a href="./aids.html">
-        <button type="button" class=" btn btn-info col-5 fw-bold" style="background:linear-gradient(-45deg,#e6e6e6,#f67a2d,#f67a2d);border:solid 1px #f67a2d;">AI&DS<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="0.6em"><path fill="currentColor" d="M24 22q-8.05 0-13.025-2.45T6 14q0-3.15 4.975-5.575Q15.95 6 24 6t13.025 2.425Q42 10.85 42 14q0 3.1-4.975 5.55Q32.05 22 24 22Zm0 10q-7.3 0-12.65-2.2Q6 27.6 6 24.5v-5q0 1.95 1.875 3.375t4.65 2.35q2.775.925 5.9 1.35Q21.55 27 24 27q2.5 0 5.6-.425 3.1-.425 5.875-1.325 2.775-.9 4.65-2.325Q42 21.5 42 19.5v5q0 3.1-5.35 5.3Q31.3 32 24 32Zm0 10q-7.3 0-12.65-2.2Q6 37.6 6 34.5v-5q0 1.95 1.875 3.375t4.65 2.35q2.775.925 5.9 1.35Q21.55 37 24 37q2.5 0 5.6-.425 3.1-.425 5.875-1.325 2.775-.9 4.65-2.325Q42 31.5 42 29.5v5q0 3.1-5.35 5.3Q31.3 42 24 42Z"/></svg>
+        <button type="button" class=" btn btn-outline-info col-3">AI&DS<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="0.6em"><path fill="currentColor" d="M24 22q-8.05 0-13.025-2.45T6 14q0-3.15 4.975-5.575Q15.95 6 24 6t13.025 2.425Q42 10.85 42 14q0 3.1-4.975 5.55Q32.05 22 24 22Zm0 10q-7.3 0-12.65-2.2Q6 27.6 6 24.5v-5q0 1.95 1.875 3.375t4.65 2.35q2.775.925 5.9 1.35Q21.55 27 24 27q2.5 0 5.6-.425 3.1-.425 5.875-1.325 2.775-.9 4.65-2.325Q42 21.5 42 19.5v5q0 3.1-5.35 5.3Q31.3 32 24 32Zm0 10q-7.3 0-12.65-2.2Q6 37.6 6 34.5v-5q0 1.95 1.875 3.375t4.65 2.35q2.775.925 5.9 1.35Q21.55 37 24 37q2.5 0 5.6-.425 3.1-.425 5.875-1.325 2.775-.9 4.65-2.325Q42 31.5 42 29.5v5q0 3.1-5.35 5.3Q31.3 42 24 42Z"/></svg>
 
 
     </button></a>
@@ -93,9 +101,11 @@
       
     <hr style="color:white;"/>
     
-    <small class="position-fixed bottom-0 end-0 mx-3 mb-4 fs-3 border rounded-circle p-2 text-info z-2" style="background:#ffffff86"> <i class="fa-brands fa-instagram fa-shake fa-2xl " style="color:#ec1feaa0;" onclick="window.open ='https://instagram.com/vnvr_karthik1?igshid=NGExMmI2YTkyZg=='" id="insta"  data-bs-toggle="tooltip" data-bs-title="Instagram" data-bs-custom-class="custom-tooltip" ></i></small>
+    <small class="position-fixed bottom-0 end-0 mx-3 mb-4 fs-3 border rounded-circle p-2 text-info z-2" style="background:#ffffff86"> <i class="fa-brands fa-instagram fa-shake fa-2xl " style="color:#ec1feaa0;" onclick="window.location.href ='https://instagram.com/vnvr_karthik1?igshid=NGExMmI2YTkyZg=='" id="insta"  data-bs-toggle="tooltip" data-bs-title="Instagram" data-bs-custom-class="custom-tooltip" ></i>
+    </small>
     
-    <small class="position-fixed bottom-0 start-0 mx-3 mb-4 fs-3 border rounded-circle p-2 text-info z-2" style="background:#ffffff7f" id="version"><i class="fa-brands fa-linkedin fa-shake  fa-2xl" style="color: #182b7d;" onclick="window.location.href = 'https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E1%2590%2581%25CE%25BD%25E1%2590%2581%25EA%25AD%25B1-%25EA%25AE%25B6%25E1%2590%2583%25EA%25AD%25B1%25CD%25B3%25EA%25AE%258B%25EA%25AE%2596%25EA%25AE%25B6-vnvr-karthik1-8864a0255' " id="linkedin" data-bs-toggle="tooltip" data-bs-title="LinkedIn" data-bs-custom-class="custom-tooltip" ></i></small>
+    <small class="position-fixed bottom-0 start-0 mx-3 mb-4 fs-3 border rounded-circle p-2 text-info z-2" style="background:#ffffff7f" id="version"><i class="fa-brands fa-linkedin fa-shake  fa-2xl" style="color: #182b7d;" onclick="window.location.href = 'https://www.linkedin.com/authwall?trk=bf&trkInfo=bf&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2F%25E1%2590%2581%25CE%25BD%25E1%2590%2581%25EA%25AD%25B1-%25EA%25AE%25B6%25E1%2590%2583%25EA%25AD%25B1%25CD%25B3%25EA%25AE%258B%25EA%25AE%2596%25EA%25AE%25B6-vnvr-karthik1-8864a0255' " id="linkedin" data-bs-toggle="tooltip" data-bs-title="LinkedIn" data-bs-custom-class="custom-tooltip" ></i>
+    </small>
     
     <small class="position-fixed bottom-0 end-0 mx-3 text-info z-2" id="version">Version-2.0</small>
     <select class="form-select hidden " aria-label="Default select example" id='year' >
