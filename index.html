@@ -243,7 +243,8 @@
   <span class="input-group-text" id="basic-addon1" >Enter ID: </span>
   <input type="text" class="form-control" placeholder="Ex: 23481a04p4" aria-label="Username"  aria-describedby="basic-addon1" id="inp" autofocus>
   
-  <button type="button" id="sub" onclick="if(inp.value!=''){getid()}else{alert('Enter ID')}" class="btn text-white" style="background:#1b72f7;"> Get Photo</button>
+  <button type="button" id="sub" onclick="if(inp.value!=''){getid()}else{alert('Enter ID')}" class="btn text-white" style="background:#1b72f7;"> Leo <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h18.95q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.6 9 27.95 9H9v30h30V20.1q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q42 19.45 42 20.1V39q0 1.2-.9 2.1-.9.9-2.1.9Zm27.5-24.9q-.65 0-1.075-.425Q35 16.25 35 15.6v-2.55h-2.55q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075.425-.425 1.075-.425H35V7.5q0-.65.425-1.075Q35.85 6 36.5 6q.65 0 1.075.425Q38 6.85 38 7.5v2.55h2.55q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425H38v2.55q0 .65-.425 1.075-.425.425-1.075.425ZM13.55 33.9H34.5q.5 0 .7-.4.2-.4-.1-.8l-5.7-7.6q-.25-.3-.6-.3t-.6.3l-5.75 7.55-4.1-5.4q-.25-.3-.6-.3t-.6.3l-4.2 5.45q-.25.4-.025.8t.625.4ZM9 20.1V39 9v11.1Z"/>
+  </svg></button>
 </div>
 
 
@@ -300,21 +301,16 @@
 <script src="search.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
  
+    
+
     setTimeout(function() {
+         alert("Version-2.0 \n •You need High Speed Internet or Wi-Fi Connection to use this Site");
+        alert("In older version you can just search an ID number \n • In This updated version \n+ I added a new big functionality , in which you can get the whole academic year's ID's department wise in just one click \n+ And new pop up and animation effects.\n+ If you have any improvement or new ideas, mailto: vnvrkarthik@gmail.com")
+setTimeout(function() {
       $('h1').css('letterSpacing','0px')
 
-    }, 1500);
-
-    setTimeout(function() {
-         alert('Version-2.0 \n •You need High Speed Internet or Wi-Fi Connection to use this Site');
-        alert('In older version you can just search an ID number \n + In This updated version \n
-              • I added a new big functionality , in which you can get the whole academic year's ID's department wise in just one click \n
-•And new pop up and animation effects.\n
-        •If you have any improvement or new ideas, mailto: vnvrkarthik@gmail.com
-        
-              ')
-
-    }, 100);
+    }, 1000);
+    }, 1000);
    
  document.onkeydown=function(evt){
         var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
