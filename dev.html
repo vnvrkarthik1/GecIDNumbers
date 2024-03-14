@@ -20,20 +20,54 @@
             box-sizing: border-box;
         }
         body{
-            /* background-color: #1c71d8; */
-            background: url(wallpaperflare.com_wallpaper.jpg);
+             background-color: #544a73; 
+            background-image: url(wallpaperflare.com_wallpaper.jpg) 
             color: white;
             background-size: cover;
          
         }
+        
+        
+                 /* transition effects */
+
+  
+ .hidden{
+            opacity: 0;
+        scale:0.5;
+        
+            transform: translateY(100px);
+
+            transition: all 500ms; 
+      }
+      @media(prefers-reduced-motion){
+        .hidden{
+            transition: none;
+        }
+      }
+        
+        .show{
+            opacity: 1;
+         scale:1;
+        
+            transform: translateY(0);
+
+        }
+        
+        
+        
+        
+        
+        
+        
+        
         .card {
  width: 350px;
  height: max-content;
  margin: 20px auto;
  background-color: #F8FBFE;
- border-radius: 8px;
+ 
  z-index: 1;
- border-radius: 15px;
+ border-radius: 25px;
 background: #241f31;
 box-shadow:  20px 20px 60px #1f1a2a,
              -20px -20px 60px #292438;
@@ -60,14 +94,17 @@ box-shadow:  20px 20px 60px #1f1a2a,
 
 .red {
  background-color: #ff605c;
+ transition-delay: 0.25s;
 }
 
 .yellow {
  background-color: #ffbd44;
+transition-delay: 0.5s;
 }
 
 .green {
  background-color: #00ca4e;
+ transition-delay: 0.75s;
 }
 
 
@@ -110,27 +147,27 @@ border-radius: 5px;
 /* instagram*/
 .containerOne:hover {
   background-color: #d62976;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* twitter*/
 .containerTwo:hover {
   background-color: #00acee;
-  transition-duration: .3s;
+  transition-duration: 3s;
 }
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
-  transition-duration: .3s;
+  transition-duration: 0.93s;
 }
 /* Whatsapp*/
 .containerFour:hover {
   background-color: #128C7E;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: .3s;
+  transition-duration: 1.3s;
 }
 
 .socialSvg {
@@ -156,7 +193,7 @@ border-radius: 5px;
     opacity: 1;
   }
 }
-
+        
 
     </style>
 </head>
@@ -187,26 +224,31 @@ border-radius: 5px;
     <section>
         <div class="card text-white" style="display: flex;flex-direction: column;">
             <div class="tools hidden delay-0">
-              <div class="circle hidden">
-                <span class="red box"></span>
+              <div class="circle">
+                <span class="red box hidden"></span>
               </div>
-              <div class="circle hidden delay-50">
-                <span class="yellow box"></span>
+              <div class="circle delay-50">
+                <span class="yellow box hidden" ></span>
               </div>
-              <div class="circle hidden delay-75">
-                <span class="green box"></span>
+              <div class="circle delay-5">
+                <span class="green box hidden"></span>
               </div>
             </div>
             <div class="card__content">
                 <img src="https://i.ibb.co/F3MNzK0/vnvr-Karthik1.jpg" class="card-img-top rounded-2 mx-auto d-block img-fluid hidden" alt="AASH" style="width: 90%;">
                 <!-- -->
                 <div class="card-body" style=" font-family: 'Raleway', sans-serif;">
-                  <h5 class="card-title hidden">VNVR Karthik</h5>
+                  <h5 class="card-title">VNVR Karthik</h5>
                   <h6 class="card-subtitle mb-2  text-white fw-lighter" >FullStack Developer</h6>
+<hr class="hidden">
 
-                  <p class="card-text fs-6 " style="   font-family: 'Raleway', sans-serif;"> Worked as Web deveoper for 2 years, did some projects based on Machine learning,Data Analytics and Data Visualization etc.. <br> Completed first Internship from IIT Delhi..</p>
+
+                  <p class="card-text  fs-6 hidden " style="   font-family: 'Raleway', sans-serif;transition-delay:1s"> Worked as Web deveoper for 2 years, did some projects based on Machine learning,Data Analytics and Data Visualization etc.. <br>
+                
+                  Completed first Internship from IIT Delhi..</p>
+                  <hr class="hidden">
                   <p class=" hidden">
-                    Languages: <small style="font-weight: lighter;">HTML,CSS,JavaScript,BootStrap,jQuery,Java,Python,SQL,PHP,ReactJS & Data Analytics, Data Visualization,ML <br> Interests: Rocket Science & Quantum Mechanics</small>
+                    Languages: <small class="hidden" style="font-weight: lighter;transition-delay:1.5s">HTML,CSS,JavaScript,BootStrap,jQuery,Java,Python,SQL,PHP,ReactJS & Data Analytics, Data Visualization,ML <br> Interests: Rocket Science & Quantum Mechanics</small>
                   </p>
               
                 </div>
@@ -215,15 +257,16 @@ border-radius: 5px;
             </div>
 
             <!-- footercard -->
-            <div class="card2 card-footer" style="display: flex;flex-grow: 1;width: auto;height: 20px;margin: 0 10px 10px 10px;border-radius: 10px;gap: 10px;">
-                <a href="#" class="socialContainer containerOne hidden">
+            <div class="card2 card-footer hidden" style="display: flex;flex-grow: 1;width: auto;height: 20px;margin: 0 10px 10px 10px;border-radius: 10px;gap: 10px;">
+                <a href="https://www.instagram.com/vnvr_karthik1?igsh=MWp0b2ZndXBvMzRyZQ==" class="socialContainer containerOne hidden " style="transition-delay:1.75s" id="insta">
                   <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
                 </a>
                 
-                <a href="#" class="socialContainer containerTwo hidden">
+                <a href="#" class="socialContainer containerTwo hidden" style="transition-delay:2s" id="fb">
+                  
                   <svg class="socialSvg twitterSvg" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>              </a>
                   
-                <a href="#" class="socialContainer containerThree hidden">
+                <a href="#" class="socialContainer containerThree hidden"  style="transition-delay:2.25s" id="linkedin">
                   <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
                 </a>
                 
@@ -258,6 +301,44 @@ border-radius: 5px;
             </div>
           </div>
     </main>
-    <script src="Loop.js" type="text/javascript" charset="utf-8"></script>
+    <script  type="text/javascript" charset="utf-8">
+      
+      
+
+
+
+
+
+
+
+const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        
+          if (entry.isIntersecting){
+              entry.target.classList.add('show')
+              document.getElementById('insta').style.transitionDelay = '100ms';
+  document.getElementById('fb').style.transitionDelay = '300ms';
+  document.getElementById('linkedin').style.transitionDelay = '500ms';
+  revert()
+          }else{
+             // entry.target.classList.remove('show')
+          }
+      });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el))
+
+function revert(){
+setTimeout(function() {
+  document.getElementById('insta').style.transitionDelay = '100ms';
+  document.getElementById('fb').style.transitionDelay = '100ms';
+  document.getElementById('linkedin').style.transitionDelay = '100ms';
+  // fb.style.transitionDelay = '50ms';
+//  linkedin.style.transitionDelay = '50ms';
+}, 1000);
+
+}
+    </script>
 </body>
 </html>
