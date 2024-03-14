@@ -17,7 +17,7 @@ if(times!=1){
   var alphaval = 0;
   var postId;
   for(let i =1;i<=n;i++){
-    if(i<=9){
+    if(i<=9){ 
       postId = "0"+i;
     }
     else if(i<=99){
