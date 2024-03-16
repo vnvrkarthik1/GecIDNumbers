@@ -316,9 +316,9 @@ const observer = new IntersectionObserver((entries) => {
         
           if (entry.isIntersecting){
               entry.target.classList.add('show')
-              document.getElementById('insta').style.transitionDelay = '100ms';
-  document.getElementById('fb').style.transitionDelay = '300ms';
-  document.getElementById('linkedin').style.transitionDelay = '500ms';
+              document.getElementById('insta').style.transitionDelay = '0s';
+  document.getElementById('fb').style.transitionDelay = '0ms';
+  document.getElementById('linkedin').style.transitionDelay = '0ms';
   revert()
           }else{
              // entry.target.classList.remove('show')
@@ -331,11 +331,11 @@ const observer = new IntersectionObserver((entries) => {
 
 function revert(){
 setTimeout(function() {
-  document.getElementById('insta').style.transitionDelay = '100ms';
-  document.getElementById('fb').style.transitionDelay = '100ms';
-  document.getElementById('linkedin').style.transitionDelay = '100ms';
-  // fb.style.transitionDelay = '50ms';
-//  linkedin.style.transitionDelay = '50ms';
+  document.getElementById('insta').style.transitionDelay = '0ms';
+  document.getElementById('fb').style.transitionDelay = '0ms';
+  document.getElementById('linkedin').style.transitionDelay = '0ms';
+  // fb.style.transitionDelay = '0ms';
+//  linkedin.style.transitionDelay = '0ms';
 }, 1000);
 
 }
