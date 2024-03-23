@@ -70,10 +70,10 @@
         padding: 10px 2px;
           
        
-          color:rgb(60,60,60);
-          background: rgba(255,255,255,.35);
+         
+          background: rgba(255,255,255,.25);
     box-shadow: var(--sec2-box-shadow);
-    backdrop-filter:saturate(200%);
+    backdrop-filter:saturate(300%);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.25)
           
