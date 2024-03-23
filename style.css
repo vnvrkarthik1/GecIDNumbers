@@ -71,14 +71,16 @@
           
        
          
-          background: rgba(255,255,255,.25);
-    box-shadow: var(--sec2-box-shadow);
-    backdrop-filter:blur(15px) saturate(300%);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.25)
+          
           
     
-    
+background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.25);
+    backdrop-filter:blur(15px) saturate(160%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+            
         }
         .img3{
           height:100px;
